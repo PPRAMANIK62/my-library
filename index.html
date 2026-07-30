@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purbayan's Library</title>
+    <script>
+      // Apply any explicit stored theme override before first paint, so a
+      // manually-forced light/dark choice doesn't flash the system default
+      // on reload. "system" (or no stored value) applies no class and
+      // leaves the choice to the prefers-color-scheme media query in
+      // index.css — see src/hooks/use-theme.ts for the matching logic.
+      try {
+        var t = localStorage.getItem("library-app-theme");
+        if (t === "dark" || t === "light") {
+          document.documentElement.classList.add(t);
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
