@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react"
-import { Outlet } from "react-router-dom"
+import { Outlet, ScrollRestoration } from "react-router-dom"
 
 import { GithubIcon, XIcon } from "@/components/brand-icons"
 import { CommandMenu } from "@/components/command-menu"
@@ -56,6 +56,7 @@ export function RootLayout() {
           <Outlet />
         </main>
       </Reveal>
+      <ScrollRestoration />
     </div>
   )
 }
