@@ -87,6 +87,57 @@ export default function Chunk() {
         </p>
       </Concept>
 
+      <h2>B</h2>
+
+      <Concept label="Bottleneck Trap Antipattern">
+        <p>
+          An architect takes ownership of critical-path code (usually
+          framework or the trickiest parts) and becomes a bottleneck for
+          the team, since they aren't a full-time developer. Fix: delegate
+          the critical path, code minor business functionality instead.{" "}
+          <em>
+            Ch. 2 →{" "}
+            <Link to="/fundamentals-of-software-architecture/0008-business-drivers-and-staying-hands-on">
+              Business Drivers &amp; Staying Hands-On
+            </Link>
+          </em>
+        </p>
+      </Concept>
+
+      <h2>F</h2>
+
+      <Concept label="Frozen Caveman Antipattern">
+        <p>
+          An architect who reverts to one pet irrational concern on every
+          project, regardless of whether it's actually relevant to the
+          situation at hand — usually the residue of being burned once by a
+          real risk in the past.{" "}
+          <em>
+            Ch. 2 →{" "}
+            <Link to="/fundamentals-of-software-architecture/0005-technical-breadth-and-the-knowledge-pyramid">
+              Technical Breadth &amp; the Knowledge Pyramid
+            </Link>
+          </em>
+        </p>
+      </Concept>
+
+      <h2>K</h2>
+
+      <Concept label="Knowledge pyramid">
+        <p>
+          A model of all technical knowledge in three tiers: stuff you know
+          (smallest), stuff you know you don't know (bigger), and stuff you
+          don't know you don't know (largest). Architects work the top two
+          tiers; developers focus mostly on the top.{" "}
+          <em>
+            Ch. 2 →{" "}
+            <Link to="/fundamentals-of-software-architecture/0005-technical-breadth-and-the-knowledge-pyramid">
+              Technical Breadth &amp; the Knowledge Pyramid
+            </Link>
+          </em>
+        </p>
+      </Concept>
+
       <h2>L</h2>
 
       <Concept label="Logical components">
@@ -104,6 +155,21 @@ export default function Chunk() {
       </Concept>
 
       <h2>S</h2>
+
+      <Concept label="Strategic vs. tactical decision">
+        <p>
+          A way to place a decision on the architecture/design spectrum:
+          strategic decisions (long-term, lots of planning, many
+          stakeholders) skew architectural; tactical decisions (short-term,
+          quick, few people) skew design.{" "}
+          <em>
+            Ch. 2 →{" "}
+            <Link to="/fundamentals-of-software-architecture/0004-architecture-versus-design">
+              Architecture Versus Design
+            </Link>
+          </em>
+        </p>
+      </Concept>
 
       <Concept label="Structural decay">
         <p>
@@ -133,6 +199,22 @@ export default function Chunk() {
             Ch. 1 →{" "}
             <Link to="/fundamentals-of-software-architecture/0003-expectations-of-a-software-architect">
               Expectations of a Software Architect
+            </Link>
+          </em>
+        </p>
+      </Concept>
+
+      <Concept label="Technology radar">
+        <p>
+          A living document assessing technologies/techniques across four
+          quadrants (Tools, Languages &amp; Frameworks, Techniques,
+          Platforms) and four rings (Hold, Assess, Trial, Adopt), from
+          Thoughtworks; kept personally as a tool for deliberately directing
+          technical-breadth time.{" "}
+          <em>
+            Ch. 2 →{" "}
+            <Link to="/fundamentals-of-software-architecture/0006-building-a-personal-technology-radar">
+              Building a Personal Technology Radar
             </Link>
           </em>
         </p>
